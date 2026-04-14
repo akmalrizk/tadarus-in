@@ -1,0 +1,26 @@
+{
+  "name": "tadarus.in",
+  "version": "1.0.0",
+  "description": "mencatat riwayat tadarus kita sesuai dengan target yang ingin dicapai",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx webpack ./main.js --mode=production",
+    "dev": "npx webpack ./main.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "npx @tailwindcss/cli -i ./style.css -o ./dist/style.css --mode=production",
+    "tw:dev": "npx @tailwindcss/cli -i ./style.css -o ./dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Akmal Rizky",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2",
+    "typed.js": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.106.1",
+    "webpack-cli": "^7.0.2"
+  }
+}
